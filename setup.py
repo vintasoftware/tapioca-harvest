@@ -69,7 +69,7 @@ setup(
     long_description=readme,
     author=get_author(package),
     author_email=get_email(package),
-    url='https://github.com/aericson/tapioca-harvest',
+    url='https://github.com/vintasoftware/tapioca-harvest',
     packages=[
         'tapioca_harvest',
     ],
