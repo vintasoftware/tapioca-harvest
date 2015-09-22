@@ -31,6 +31,10 @@ class HarvestClientAdapter(JSONAdapterMixin, TapiocaAdapter):
                                          response_data, response):
         pass
 
+    def response_to_native(self, response):
+        if response.content.strip():
+            return super(HarvestClientAdapter, self).response_to_native(response)
+
     def get_api_root(self, api_params):
         return 'https://' + api_params['company_name'] + '.harvestapp.com/'
 
