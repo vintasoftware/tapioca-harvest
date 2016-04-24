@@ -213,6 +213,10 @@ RESOURCE_MAPPING = {
         'resource': 'daily/{day_of_the_year}/{year}',
         'docs': 'https://github.com/harvesthq/api/blob/master/Sections/Time%20Tracking.md',
     },
+    'tracking_daily_day_user': {
+        'resource': 'daily/{day_of_the_year}/{year}?of_user={user_id}',
+        'docs': 'https://github.com/harvesthq/api/blob/master/Sections/Time%20Tracking.md',
+    },
     'tracking_entry': {
         'resource': 'daily/show/{day_entry_id}',
         'docs': 'https://github.com/harvesthq/api/blob/master/Sections/Time%20Tracking.md',
