@@ -10,17 +10,13 @@ RESOURCE_MAPPING = {
     # Client Contacts
     'contacts': {
         'resource': 'contacts',
-        'docs': 'https://github.com/harvesthq/api/blob/master/Sections/Client%20Contacts.md',
+        'docs': 'https://help.getharvest.com/api-v2/clients-api/clients/contacts/#list-all-contacts',
         'methods': ['POST', 'GET']
-    },
-    'client_contacts': {
-        'resource': 'clients/{client_id}/contacts',
-        'docs': 'https://github.com/harvesthq/api/blob/master/Sections/Client%20Contacts.md'
     },
     'contact': {
         'resource': 'contacts/{contact_id}',
-        'docs': 'https://github.com/harvesthq/api/blob/master/Sections/Client%20Contacts.md',
-        'methods': ['PUT', 'GET', 'DELETE']
+        'docs': 'https://help.getharvest.com/api-v2/clients-api/clients/contacts/#retrieve-a-contact',
+        'methods': ['PATCH', 'GET', 'DELETE']
     },
 
     # Clients
