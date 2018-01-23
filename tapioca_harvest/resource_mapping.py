@@ -50,21 +50,16 @@ RESOURCE_MAPPING = {
         'methods': ['GET', 'PATCH', 'DELETE']
     },
 
-    # Expense Tracking
+    # Expenses
     'expenses': {
         'resource': 'expenses',
-        'docs': 'https://github.com/harvesthq/api/blob/master/Sections/Expense%20Tracking.md',
-        'methods': ['POST']
+        'docs': 'https://help.getharvest.com/api-v2/expenses-api/expenses/expenses/#list-all-expenses',
+        'methods': ['GET', 'POST']
     },
     'expense': {
         'resource': 'expenses/{expense_id}',
-        'docs': 'https://github.com/harvesthq/api/blob/master/Sections/Expense%20Tracking.md',
-        'methods': ['PUT', 'GET', 'DELETE']
-    },
-    'expense_receipt': {
-        'resource': 'expenses/{expense_id}/receipt',
-        'docs': 'https://github.com/harvesthq/api/blob/master/Sections/Expense%20Tracking.md',
-        'methods': ['POST', 'GET']
+        'docs': 'https://help.getharvest.com/api-v2/expenses-api/expenses/expenses/#retrieve-an-expense',
+        'methods': ['PATCH', 'GET', 'DELETE']
     },
 
     # Invoice Categories
