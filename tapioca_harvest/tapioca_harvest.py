@@ -6,7 +6,7 @@ from tapioca import (
 from requests.auth import HTTPBasicAuth
 
 
-from resource_mapping import RESOURCE_MAPPING
+from .resource_mapping import RESOURCE_MAPPING
 
 
 class HarvestClientAdapter(JSONAdapterMixin, TapiocaAdapter):
