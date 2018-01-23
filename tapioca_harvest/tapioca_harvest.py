@@ -11,15 +11,19 @@ from .resource_mapping import RESOURCE_MAPPING
 
 class HarvestClientAdapter(JSONAdapterMixin, TapiocaAdapter):
     resource_mapping = RESOURCE_MAPPING
+    api_root = 'https://api.harvestapp.com/v2/'
 
     def get_request_kwargs(self, api_params, *args, **kwargs):
         params = super(HarvestClientAdapter, self).get_request_kwargs(
             api_params, *args, **kwargs)
 
-        params['auth'] = HTTPBasicAuth(
-            api_params.get('user'), api_params.get('password'))
+        headers = {
+            'Authorization': 'Bearer %s' % params.get('token', ''),
+            'Harvest-Account-Id': params.get('account_id', ''),
+            'User-Agent': params.get('user_agent', '')
+        }
 
-        params['headers'] = params.get('headers', {})
+        params['headers'] = params.get('headers', headers)
         params['headers']['Accept'] = 'application/json'
 
         return params
@@ -34,9 +38,6 @@ class HarvestClientAdapter(JSONAdapterMixin, TapiocaAdapter):
     def response_to_native(self, response):
         if response.content.strip():
             return super(HarvestClientAdapter, self).response_to_native(response)
-
-    def get_api_root(self, api_params):
-        return 'https://' + api_params['company_name'] + '.harvestapp.com/'
 
 
 Harvest = generate_wrapper_from_adapter(HarvestClientAdapter)
