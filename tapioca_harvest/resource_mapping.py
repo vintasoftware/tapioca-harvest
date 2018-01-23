@@ -142,6 +142,18 @@ RESOURCE_MAPPING = {
         'methods': ['GET']
     },
 
+    # User Project Assignments
+    'project_assignments': {
+        'resource': 'users/{user_id}/project_assignments',
+        'docs': 'https://help.getharvest.com/api-v2/users-api/users/project-assignments/#list-all-project-assignments',
+        'methods': ['GET']
+    },
+    'my_project_assignments': {
+        'resource': 'users/me/project_assignments',
+        'docs': 'https://help.getharvest.com/api-v2/users-api/users/project-assignments/#list-all-project-assignments-for-the-currently-authenticated-user',
+        'methods': ['GET']
+    },
+    
     # Projects
     'projects': {
         'resource': 'projects',
@@ -248,15 +260,4 @@ RESOURCE_MAPPING = {
         'docs': 'https://github.com/harvesthq/api/blob/master/Sections/Time%20and%20Expense%20Reporting.md',
     },
 
-    # User Assignment
-    'user_assignments': {
-        'resource': 'projects/{project_id}/user_assignments',
-        'docs': 'https://github.com/harvesthq/api/blob/master/Sections/User%20Assignment.md',
-        'methods': ['GET', 'POST']
-    },
-    'user_assignment': {
-        'resource': 'projects/{project_id}/user_assignments/{user_assignment_id}',
-        'docs': 'https://github.com/harvesthq/api/blob/master/Sections/User%20Assignment.md',
-        'methods': ['GET', 'PUT', 'DELETE']
-    },
 }
