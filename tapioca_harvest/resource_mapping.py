@@ -121,13 +121,13 @@ RESOURCE_MAPPING = {
     # Invoices
     'invoices': {
         'resource': 'invoices',
-        'docs': 'https://github.com/harvesthq/api/blob/master/Sections/Invoices.md',
+        'docs': 'https://help.getharvest.com/api-v2/invoices-api/invoices/invoices/#list-all-invoices',
         'methods': ['GET', 'POST']
     },
     'invoice': {
         'resource': 'invoices/{invoice_id}',
-        'docs': 'https://github.com/harvesthq/api/blob/master/Sections/Invoices.md',
-        'methods': ['GET', 'PUT', 'DELETE']
+        'docs': 'https://help.getharvest.com/api-v2/invoices-api/invoices/invoices/#retrieve-an-invoice',
+        'methods': ['GET', 'PATCH', 'DELETE']
     },
 
     # People
