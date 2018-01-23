@@ -41,13 +41,13 @@ RESOURCE_MAPPING = {
     # Expense Categories
     'expense_categories': {
         'resource': 'expense_categories',
-        'docs': 'https://github.com/harvesthq/api/blob/master/Sections/Expense%20Categories.md',
+        'docs': 'https://help.getharvest.com/api-v2/expenses-api/expenses/expense-categories/#list-all-expense-categories',
         'methods': ['GET', 'POST']
     },
     'expense_category': {
         'resource': 'expense_categories/{expense_category_id}',
-        'docs': 'https://github.com/harvesthq/api/blob/master/Sections/Expense%20Categories.md',
-        'methods': ['GET', 'PUT', 'DELETE']
+        'docs': 'https://help.getharvest.com/api-v2/expenses-api/expenses/expense-categories/#retrieve-an-expense-category',
+        'methods': ['GET', 'PATCH', 'DELETE']
     },
 
     # Expense Tracking
