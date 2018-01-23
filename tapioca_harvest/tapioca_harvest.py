@@ -17,14 +17,11 @@ class HarvestClientAdapter(JSONAdapterMixin, TapiocaAdapter):
         params = super(HarvestClientAdapter, self).get_request_kwargs(
             api_params, *args, **kwargs)
 
-        headers = {
-            'Authorization': 'Bearer %s' % params.get('token', ''),
-            'Harvest-Account-Id': params.get('account_id', ''),
-            'User-Agent': params.get('user_agent', '')
-        }
-
-        params['headers'] = params.get('headers', headers)
-        params['headers']['Accept'] = 'application/json'
+        params.setdefault('headers', {}).update({
+            'Authorization': 'Bearer %s' % api_params.get('token', ''),
+            'Harvest-Account-Id': api_params.get('account_id', ''),
+            'User-Agent': api_params.get('user_agent', '')
+        })
 
         return params
 
