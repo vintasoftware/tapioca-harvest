@@ -77,32 +77,32 @@ RESOURCE_MAPPING = {
     # Invoice Messages
     'invoices_messages': {
         'resource': 'invoices/{invoice_id}/messages',
-        'docs': 'https://github.com/harvesthq/api/blob/master/Sections/Invoice%20Messages.md',
+        'docs': 'https://help.getharvest.com/api-v2/invoices-api/invoices/invoice-messages/#list-all-messages-for-an-invoice',
         'methods': ['GET', 'POST']
     },
     'invoices_message': {
         'resource': 'invoices/{invoice_id}/messages/{message_id}',
-        'docs': 'https://github.com/harvesthq/api/blob/master/Sections/Invoice%20Messages.md',
-        'methods': ['GET', 'DELETE']
+        'docs': 'https://help.getharvest.com/api-v2/invoices-api/invoices/invoice-messages/#delete-an-invoice-message',
+        'methods': ['DELETE']
     },
     'invoices_message_mark_as_sent': {
-        'resource': 'invoices/{invoice_id}/messages/mark_as_sent',
-        'docs': 'https://github.com/harvesthq/api/blob/master/Sections/Invoice%20Messages.md',
+        'resource': 'invoices/{invoice_id}/messages',
+        'docs': 'https://help.getharvest.com/api-v2/invoices-api/invoices/invoice-messages/#mark-a-draft-invoice-as-sent',
         'methods': ['POST']
     },
     'invoices_message_mark_as_closed': {
-        'resource': 'invoices/{invoice_id}/messages/mark_as_closed',
-        'docs': 'https://github.com/harvesthq/api/blob/master/Sections/Invoice%20Messages.md',
+        'resource': 'invoices/{invoice_id}/messages',
+        'docs': 'https://help.getharvest.com/api-v2/invoices-api/invoices/invoice-messages/#mark-an-open-invoice-as-closed',
         'methods': ['POST']
     },
     'invoices_message_re_open': {
-        'resource': 'invoices/{invoice_id}/messages/re_open',
-        'docs': 'https://github.com/harvesthq/api/blob/master/Sections/Invoice%20Messages.md',
+        'resource': 'invoices/{invoice_id}/messages',
+        'docs': 'https://help.getharvest.com/api-v2/invoices-api/invoices/invoice-messages/#re-open-a-closed-invoice',
         'methods': ['POST']
     },
-    'invoices_message_mark_as_drafg': {
-        'resource': 'invoices/{invoice_id}/messages/mark_as_draft',
-        'docs': 'https://github.com/harvesthq/api/blob/master/Sections/Invoice%20Messages.md',
+    'invoices_message_mark_as_draft': {
+        'resource': 'invoices/{invoice_id}/messages',
+        'docs': 'https://help.getharvest.com/api-v2/invoices-api/invoices/invoice-messages/#mark-an-open-invoice-as-a-draft',
         'methods': ['POST']
     },
 
