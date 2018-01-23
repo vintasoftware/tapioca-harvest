@@ -109,13 +109,13 @@ RESOURCE_MAPPING = {
     # Invoice Payments
     'invoices_payments': {
         'resource': 'invoices/{invoice_id}/payments',
-        'docs': 'https://github.com/harvesthq/api/blob/master/Sections/Invoice%20Payments.md',
+        'docs': 'https://help.getharvest.com/api-v2/invoices-api/invoices/invoice-payments/#list-all-payments-for-an-invoice',
         'methods': ['GET', 'POST']
     },
     'invoices_payment': {
         'resource': 'invoices/{invoice_id}/payments/{payment_id}',
-        'docs': 'https://github.com/harvesthq/api/blob/master/Sections/Invoice%20Payments.md',
-        'methods': ['GET', 'DELETE']
+        'docs': 'https://help.getharvest.com/api-v2/invoices-api/invoices/invoice-payments/#delete-an-invoice-payment',
+        'methods': ['DELETE']
     },
 
     # Invoices
