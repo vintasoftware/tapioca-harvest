@@ -62,16 +62,16 @@ RESOURCE_MAPPING = {
         'methods': ['PATCH', 'GET', 'DELETE']
     },
 
-    # Invoice Categories
+    # Invoice Item Categories
     'invoice_item_categories': {
         'resource': 'invoice_item_categories',
-        'docs': 'https://github.com/harvesthq/api/blob/master/Sections/Invoice%20Categories.md',
+        'docs': 'https://help.getharvest.com/api-v2/invoices-api/invoices/invoice-item-categories/#list-all-invoice-item-categories',
         'methods': ['POST', 'GET']
     },
     'invoice_item_category': {
         'resource': 'invoice_item_categories/{category_id}',
-        'docs': 'https://github.com/harvesthq/api/blob/master/Sections/Invoice%20Categories.md',
-        'methods': ['PUT', 'DELETE']
+        'docs': 'https://help.getharvest.com/api-v2/invoices-api/invoices/invoice-item-categories/#retrieve-an-invoice-item-category',
+        'methods': ['GET', 'PATCH', 'DELETE']
     },
 
     # Invoice Messages
