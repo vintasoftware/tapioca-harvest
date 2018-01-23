@@ -30,6 +30,12 @@ RESOURCE_MAPPING = {
         'docs': 'https://help.getharvest.com/api-v2/clients-api/clients/clients/#retrieve-a-client',
         'methods': ['GET', 'PATCH', 'DELETE']
     },
+
+    # Company
+    'company': {
+        'resource': 'company',
+        'docs': 'https://help.getharvest.com/api-v2/company-api/company/company/#retrieve-a-company',
+        'methods': ['GET']
     },
 
     # Expense Categories
