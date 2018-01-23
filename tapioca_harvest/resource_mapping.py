@@ -22,17 +22,14 @@ RESOURCE_MAPPING = {
     # Clients
     'clients': {
         'resource': 'clients',
-        'docs': 'https://github.com/harvesthq/api/blob/master/Sections/Clients.md',
+        'docs': 'https://help.getharvest.com/api-v2/clients-api/clients/clients/#list-all-clients',
         'methods': ['GET', 'POST']
     },
     'client': {
         'resource': 'clients/{client_id}',
-        'docs': 'https://github.com/harvesthq/api/blob/master/Sections/Clients.md',
-        'methods': ['GET', 'PUT', 'DELETE']
+        'docs': 'https://help.getharvest.com/api-v2/clients-api/clients/clients/#retrieve-a-client',
+        'methods': ['GET', 'PATCH', 'DELETE']
     },
-    'de_activate_client': {
-        'resource': 'clients/{client_id}/toggle',
-        'docs': 'https://github.com/harvesthq/api/blob/master/Sections/Clients.md',
     },
 
     # Expense Categories
