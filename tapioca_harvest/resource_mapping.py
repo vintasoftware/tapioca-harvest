@@ -1,11 +1,6 @@
 # coding: utf-8
 
 RESOURCE_MAPPING = {
-    # Accounts
-    'who_am_i': {
-        'resource': 'account/who_am_i',
-        'docs': 'https://github.com/harvesthq/api/blob/master/Sections/Accounts.md'
-    },
 
     # Client Contacts
     'contacts': {
@@ -130,21 +125,21 @@ RESOURCE_MAPPING = {
         'methods': ['GET', 'PATCH', 'DELETE']
     },
 
-    # People
+    # Users
     'users': {
-        'resource': 'people',
-        'docs': 'https://github.com/harvesthq/api/blob/master/Sections/People.md',
+        'resource': 'users',
+        'docs': 'https://help.getharvest.com/api-v2/users-api/users/users/#list-all-users',
         'methods': ['GET', 'POST']
     },
     'user': {
-        'resource': 'people/{user_id}',
-        'docs': 'https://github.com/harvesthq/api/blob/master/Sections/People.md',
-        'methods': ['GET', 'PUT', 'DELETE']
+        'resource': 'users/{user_id}',
+        'docs': 'https://help.getharvest.com/api-v2/users-api/users/users/#retrieve-a-user',
+        'methods': ['GET', 'PATCH', 'DELETE']
     },
-    'user_toggle': {
-        'resource': 'people/{user_id}/toggle',
-        'docs': 'https://github.com/harvesthq/api/blob/master/Sections/People.md',
-        'methods': ['POST']
+    'me': {
+        'resource': 'users/me',
+        'docs': 'https://help.getharvest.com/api-v2/users-api/users/users/#retrieve-the-currently-authenticated-user',
+        'methods': ['GET']
     },
 
     # Projects
