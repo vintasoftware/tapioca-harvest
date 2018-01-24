@@ -5,4 +5,4 @@ __email__ = 'de.ericson@gmail.com'
 __version__ = '0.1'
 
 
-from tapioca_harvest import Harvest
+from .tapioca_harvest import Harvest
