@@ -190,6 +190,28 @@ RESOURCE_MAPPING = {
         'methods': ['GET', 'PATCH', 'DELETE']
     },
 
+    # Time Entries
+    'time_entries': {
+        'resource': 'time_entries',
+        'docs': 'https://help.getharvest.com/api-v2/timesheets-api/timesheets/time-entries/#list-all-time-entries',
+        'methods': ['GET', 'POST']
+    },
+    'time_entry': {
+        'resource': 'time_entries/{time_entry_id}',
+        'docs': 'https://help.getharvest.com/api-v2/timesheets-api/timesheets/time-entries/#retrieve-a-time-entry',
+        'methods': ['GET', 'PATCH', 'DELETE']
+    },
+    'time_entry_restart': {
+        'resource': 'time_entries/{time_entry_id}/restart',
+        'docs': 'https://help.getharvest.com/api-v2/timesheets-api/timesheets/time-entries/#restart-a-stopped-time-entry',
+        'methods': ['PATCH']
+    },
+    'time_entry_stop': {
+        'resource': 'time_entries/{time_entry_id}/stop',
+        'docs': 'https://help.getharvest.com/api-v2/timesheets-api/timesheets/time-entries/#stop-a-running-time-entry',
+        'methods': ['PATCH']
+    },
+
     # Time Tracking
     'tracking_daily': {
         'resource': 'daily',
