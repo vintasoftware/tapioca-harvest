@@ -153,22 +153,17 @@ RESOURCE_MAPPING = {
         'docs': 'https://help.getharvest.com/api-v2/users-api/users/project-assignments/#list-all-project-assignments-for-the-currently-authenticated-user',
         'methods': ['GET']
     },
-    
+
     # Projects
     'projects': {
         'resource': 'projects',
-        'docs': 'https://github.com/harvesthq/api/blob/master/Sections/Projects.md',
+        'docs': 'https://help.getharvest.com/api-v2/projects-api/projects/projects/#list-all-projects',
         'methods': ['GET', 'POST']
     },
     'project': {
         'resource': 'projects/{project_id}',
-        'docs': 'https://github.com/harvesthq/api/blob/master/Sections/Projects.md',
-        'methods': ['GET', 'PUT', 'DELETE']
-    },
-    'de_activate_project': {
-        'resource': 'projects/{project_id}/toggle',
-        'docs': 'https://github.com/harvesthq/api/blob/master/Sections/Projects.md',
-        'methods': ['PUT']
+        'docs': 'https://help.getharvest.com/api-v2/projects-api/projects/projects/#retrieve-a-project',
+        'methods': ['GET', 'PATCH', 'DELETE']
     },
 
     # Task Assignment
