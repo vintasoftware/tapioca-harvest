@@ -181,18 +181,13 @@ RESOURCE_MAPPING = {
     # Tasks
     'tasks': {
         'resource': 'tasks',
-        'docs': 'https://github.com/harvesthq/api/blob/master/Sections/Tasks.md',
+        'docs': 'https://help.getharvest.com/api-v2/tasks-api/tasks/tasks/#list-all-tasks',
         'methods': ['GET', 'POST']
     },
     'task': {
         'resource': 'tasks/{task_id}',
-        'docs': 'https://github.com/harvesthq/api/blob/master/Sections/Tasks.md',
-        'methods': ['GET', 'PUT', 'DELETE']
-    },
-    'task_activate': {
-        'resource': 'tasks/{task_id}/activate',
-        'docs': 'https://github.com/harvesthq/api/blob/master/Sections/Tasks.md',
-        'methods': ['POST']
+        'docs': 'https://help.getharvest.com/api-v2/tasks-api/tasks/tasks/#retrieve-a-task',
+        'methods': ['GET', 'PATCH', 'DELETE']
     },
 
     # Time Tracking
