@@ -2,18 +2,6 @@
 
 RESOURCE_MAPPING = {
 
-    # Client Contacts
-    'contacts': {
-        'resource': 'contacts',
-        'docs': 'https://help.getharvest.com/api-v2/clients-api/clients/contacts/#list-all-contacts',
-        'methods': ['POST', 'GET']
-    },
-    'contact': {
-        'resource': 'contacts/{contact_id}',
-        'docs': 'https://help.getharvest.com/api-v2/clients-api/clients/contacts/#retrieve-a-contact',
-        'methods': ['PATCH', 'GET', 'DELETE']
-    },
-
     # Clients
     'clients': {
         'resource': 'clients',
@@ -31,6 +19,18 @@ RESOURCE_MAPPING = {
         'resource': 'company',
         'docs': 'https://help.getharvest.com/api-v2/company-api/company/company/#retrieve-a-company',
         'methods': ['GET']
+    },
+
+    # Client Contacts
+    'contacts': {
+        'resource': 'contacts',
+        'docs': 'https://help.getharvest.com/api-v2/clients-api/clients/contacts/#list-all-contacts',
+        'methods': ['POST', 'GET']
+    },
+    'contact': {
+        'resource': 'contacts/{contact_id}',
+        'docs': 'https://help.getharvest.com/api-v2/clients-api/clients/contacts/#retrieve-a-contact',
+        'methods': ['PATCH', 'GET', 'DELETE']
     },
 
     # Expense Categories
@@ -66,6 +66,18 @@ RESOURCE_MAPPING = {
     'invoice_item_category': {
         'resource': 'invoice_item_categories/{category_id}',
         'docs': 'https://help.getharvest.com/api-v2/invoices-api/invoices/invoice-item-categories/#retrieve-an-invoice-item-category',
+        'methods': ['GET', 'PATCH', 'DELETE']
+    },
+
+    # Invoices
+    'invoices': {
+        'resource': 'invoices',
+        'docs': 'https://help.getharvest.com/api-v2/invoices-api/invoices/invoices/#list-all-invoices',
+        'methods': ['GET', 'POST']
+    },
+    'invoice': {
+        'resource': 'invoices/{invoice_id}',
+        'docs': 'https://help.getharvest.com/api-v2/invoices-api/invoices/invoices/#retrieve-an-invoice',
         'methods': ['GET', 'PATCH', 'DELETE']
     },
 
@@ -111,47 +123,6 @@ RESOURCE_MAPPING = {
         'resource': 'invoices/{invoice_id}/payments/{payment_id}',
         'docs': 'https://help.getharvest.com/api-v2/invoices-api/invoices/invoice-payments/#delete-an-invoice-payment',
         'methods': ['DELETE']
-    },
-
-    # Invoices
-    'invoices': {
-        'resource': 'invoices',
-        'docs': 'https://help.getharvest.com/api-v2/invoices-api/invoices/invoices/#list-all-invoices',
-        'methods': ['GET', 'POST']
-    },
-    'invoice': {
-        'resource': 'invoices/{invoice_id}',
-        'docs': 'https://help.getharvest.com/api-v2/invoices-api/invoices/invoices/#retrieve-an-invoice',
-        'methods': ['GET', 'PATCH', 'DELETE']
-    },
-
-    # Users
-    'users': {
-        'resource': 'users',
-        'docs': 'https://help.getharvest.com/api-v2/users-api/users/users/#list-all-users',
-        'methods': ['GET', 'POST']
-    },
-    'user': {
-        'resource': 'users/{user_id}',
-        'docs': 'https://help.getharvest.com/api-v2/users-api/users/users/#retrieve-a-user',
-        'methods': ['GET', 'PATCH', 'DELETE']
-    },
-    'me': {
-        'resource': 'users/me',
-        'docs': 'https://help.getharvest.com/api-v2/users-api/users/users/#retrieve-the-currently-authenticated-user',
-        'methods': ['GET']
-    },
-
-    # User Project Assignments
-    'project_assignments': {
-        'resource': 'users/{user_id}/project_assignments',
-        'docs': 'https://help.getharvest.com/api-v2/users-api/users/project-assignments/#list-all-project-assignments',
-        'methods': ['GET']
-    },
-    'my_project_assignments': {
-        'resource': 'users/me/project_assignments',
-        'docs': 'https://help.getharvest.com/api-v2/users-api/users/project-assignments/#list-all-project-assignments-for-the-currently-authenticated-user',
-        'methods': ['GET']
     },
 
     # Projects
@@ -210,6 +181,35 @@ RESOURCE_MAPPING = {
         'resource': 'time_entries/{time_entry_id}/stop',
         'docs': 'https://help.getharvest.com/api-v2/timesheets-api/timesheets/time-entries/#stop-a-running-time-entry',
         'methods': ['PATCH']
+    },
+
+    # Users
+    'users': {
+        'resource': 'users',
+        'docs': 'https://help.getharvest.com/api-v2/users-api/users/users/#list-all-users',
+        'methods': ['GET', 'POST']
+    },
+    'user': {
+        'resource': 'users/{user_id}',
+        'docs': 'https://help.getharvest.com/api-v2/users-api/users/users/#retrieve-a-user',
+        'methods': ['GET', 'PATCH', 'DELETE']
+    },
+    'me': {
+        'resource': 'users/me',
+        'docs': 'https://help.getharvest.com/api-v2/users-api/users/users/#retrieve-the-currently-authenticated-user',
+        'methods': ['GET']
+    },
+
+    # User Project Assignments
+    'project_assignments': {
+        'resource': 'users/{user_id}/project_assignments',
+        'docs': 'https://help.getharvest.com/api-v2/users-api/users/project-assignments/#list-all-project-assignments',
+        'methods': ['GET']
+    },
+    'my_project_assignments': {
+        'resource': 'users/me/project_assignments',
+        'docs': 'https://help.getharvest.com/api-v2/users-api/users/project-assignments/#list-all-project-assignments-for-the-currently-authenticated-user',
+        'methods': ['GET']
     },
 
     # Time Tracking
