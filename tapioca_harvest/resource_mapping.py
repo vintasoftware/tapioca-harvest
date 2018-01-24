@@ -137,6 +137,18 @@ RESOURCE_MAPPING = {
         'methods': ['GET', 'PATCH', 'DELETE']
     },
 
+    # Roles
+    'roles': {
+        'resource': 'roles',
+        'docs': 'https://help.getharvest.com/api-v2/roles-api/roles/roles/#list-all-roles',
+        'methods': ['GET', 'POST']
+    },
+    'role': {
+        'resource': 'roles/{role_id}',
+        'docs': 'https://help.getharvest.com/api-v2/roles-api/roles/roles/#retrieve-a-role',
+        'methods': ['GET', 'PATCH', 'DELETE']
+    },
+
     # Task Assignment
     'task_assignments': {
         'resource': 'projects/{project_id}/task_assignments',
