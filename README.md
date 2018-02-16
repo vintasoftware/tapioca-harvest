@@ -10,8 +10,11 @@ pip install tapioca-harvest
 from tapioca_harvest import Harvest
 
 
-api = Harvest(company_name='{company-name}', user='{your-user}',
-              password='{your-password}')
+api = Harvest(
+    token='{YOUR_HARVEST_API_TOKEN}',
+    account_id='{YOUR_HARVEST_ACCOUNT_ID}',
+    user_agent='{YOUR_HARVEST_APP_NAME}'
+)
 
 ```
 
